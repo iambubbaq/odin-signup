@@ -63,6 +63,7 @@
 }
 #descriptionTXT {
     font-size: 3rem;
+    margin-left: 2vw;
 }
 #formField {
     display: flex;
@@ -120,6 +121,7 @@ input::placeholder {
     padding: .5vh;
     height: 2vh;
     width: 20vw;
+    border: 1px solid;
 }
 
 #formField #requiredDisclaimer {
@@ -127,4 +129,15 @@ input::placeholder {
     font-size: 1rem;
 }
 
+input:focus {
+    outline: solid black;
+}
+
+input:focus:valid {
+    outline: solid green;
+}
+
+input:focus:invalid {
+    outline: solid red;
+}
 
