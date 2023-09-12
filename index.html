@@ -1,25 +1,123 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="./style.css" />
-        <script src="./script.js" defer></script>
-        <title>Sign Up</title>
-    </head>
-    <body>
-        <div id="mainContainer">
-            <div id="sidebar">
-                <img src="./images/sidebar.jpg" alt="Image of game controler falling above a hand" id="sidebarIMG"/>
-                <div id="logo">
-                    <img src="./images/icon.jpeg" alt="Image of man on a lion statue" id="logoIMG"/>
-                    <p id="logoTXT">IAMBUBBAQ</p>
-                </div>
-                <div id="imgOwner">
-                    <p>Photo by Nikita Kachanovsky on Unsplash</p>
-                </div>
-            </div>
-            <div id="signup"></div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./script.js" defer></script>
+    <title>Sign Up</title>
+  </head>
+  <body>
+    <div id="mainContainer">
+      <div id="sidebar">
+        <img
+          src="./images/sidebar.jpg"
+          alt="Image of game controler falling above a hand"
+          id="sidebarIMG"
+        />
+        <div id="logo">
+          <img
+            src="./images/icon.jpeg"
+            alt="Image of man on a lion statue"
+            id="logoIMG"
+          />
+          <p id="logoTXT">IAMBUBBAQ</p>
         </div>
-    </body>
+        <div id="imgOwner">
+          <p>Photo by Nikita Kachanovsky on Unsplash</p>
+        </div>
+      </div>
+      <div id="signup">
+        <p id="descriptionTXT">
+          This is not a real online service! This is a sample sign up page to
+          text out sign up form implemenations.
+        </p>
+        <div id="formField">
+          <p>Sign Up!</p>
+          <form id="signupForm">
+            <div id="formInput">
+              <div id="input1">
+                <ul>
+                  <li>
+                    <label for="firstName">First Name:</label>
+                    <input
+                      type="text"
+                      id="firstName"
+                      name="firstName"
+                      placeholder="Cloud"
+                      aria-required="true"
+                      required
+                    />
+                  </li>
+                  <li>
+                    <label for="email">Email:</label>
+                    <input
+                      type="email"
+                      id="email"
+                      name="email"
+                      placeholder="seventhheaven@midgar.com"
+                      aria-required="true"
+                      required
+                    />
+                  </li>
+                  <li>
+                    <label for="password">Password:</label>
+                    <input
+                      type="password"
+                      id="password"
+                      name="password"
+                      placeholder="********"
+                      aria-required="true"
+                      required
+                    />
+                  </li>
+                </ul>
+              </div>
+              <div id="input2">
+                <ul>
+                  <li>
+                    <label for="lastName">Last Name:</label>
+                    <input
+                      type="text"
+                      id="lastName"
+                      name="lastName"
+                      placeholder="Strife"
+                      aria-required="true"
+                      required
+                    />
+                  </li>
+                  <li>
+                    <label for="phone">Phone:</label>
+                    <input
+                      type="tel"
+                      id="phone"
+                      name="phone"
+                      placeholder="777-777-7777"
+                      aria-required="true"
+                      required
+                    />
+                  </li>
+                  <li>
+                    <label for="confirmPassword">Confirm Password:</label>
+                    <input
+                      type="password"
+                      id="confirmPassword"
+                      name="confirmPassword"
+                      placeholder="********"
+                      aria-required="true"
+                      required
+                    />
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <p id="requiredDisclaimer">*ALL FIELDS REQUIRED</p>
+          </form>
+        </div>
+        <button id="CAButton" form="signupForm" type="submit">
+          Create Account
+        </button>
+      </div>
+    </div>
+  </body>
 </html>
