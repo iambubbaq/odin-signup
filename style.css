@@ -65,6 +65,7 @@
     font-size: 3rem;
     margin-left: 2vw;
 }
+
 #formField {
     display: flex;
     flex-direction: column;
@@ -80,8 +81,13 @@
 
 #formInput {
     display: flex;
-    flex-direction: row;
-    gap: 10vw;
+    flex-direction: column;
+    gap: 1vh;
+}
+
+#row1 ul, #row2 ul, #row3 ul {
+  display: flex;
+  gap: 5vw;
 }
 
 #CAButton {

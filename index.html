@@ -36,7 +36,7 @@
           <p>Sign Up!</p>
           <form id="signupForm">
             <div id="formInput">
-              <div id="input1">
+              <div id="row1">
                 <ul>
                   <li>
                     <label for="firstName">First Name:</label>
@@ -50,6 +50,21 @@
                     />
                   </li>
                   <li>
+                    <label for="lastName">Last Name:</label>
+                    <input
+                      type="text"
+                      id="lastName"
+                      name="lastName"
+                      placeholder="Strife"
+                      aria-required="true"
+                      required
+                    />
+                  </li>                        
+                </ul>
+              </div>
+              <div id="row2">
+                <ul>
+                  <li>
                     <label for="email">Email:</label>
                     <input
                       type="email"
@@ -60,33 +75,7 @@
                       required
                       pattern="(?!(^[.-].*|[^@]*[.-]@|.*\.{2,}.*)|^.{254}.)([a-zA-Z0-9!#$%&'*+\/=?^_`{|}~.-]+@)(?!-.*|.*-\.)([a-zA-Z0-9-]{1,63}\.)+[a-zA-Z]{2,15}"
                     />
-                  </li>
-                  <li>
-                    <label for="password">Password:</label>
-                    <input
-                      type="password"
-                      id="password"
-                      name="password"
-                      placeholder="********"
-                      aria-required="true"
-                      required
-                    />
-                  </li>
-                </ul>
-              </div>
-              <div id="input2">
-                <ul>
-                  <li>
-                    <label for="lastName">Last Name:</label>
-                    <input
-                      type="text"
-                      id="lastName"
-                      name="lastName"
-                      placeholder="Strife"
-                      aria-required="true"
-                      required
-                    />
-                  </li>
+                  </li>           
                   <li>
                     <label for="phone">Phone:</label>
                     <input
@@ -97,6 +86,21 @@
                       aria-required="true"
                       required
                       pattern="[0-9]{3}-?[0-9]{3}-?[0-9]{4}"
+                    />
+                  </li>
+                </ul>
+              </div>
+              <div id="row3">
+                <ul>
+                  <li>
+                    <label for="password">Password:</label>
+                    <input
+                      type="password"
+                      id="password"
+                      name="password"
+                      placeholder="********"
+                      aria-required="true"
+                      required
                     />
                   </li>
                   <li>
